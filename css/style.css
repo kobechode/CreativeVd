@@ -220,7 +220,7 @@ nav.open ul{
 
  .banner{
 
-    padding: 6rem 0;
+    padding-bottom: 6rem ;
     padding-top: 12rem;
 
  }
@@ -344,12 +344,7 @@ nav.open ul{
 }
 
 
-@media (max-width: 768px) {
-    .services__wrapper{
-      
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    }
+
 
  /*--------------------------------------------*/
 
@@ -362,20 +357,8 @@ nav.open ul{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-.About h2{
-    margin-top: 70px;
-    margin-left: 70px;
-    color: var(--primary);
-}
-.About p{
-    text-align: justify;
-    color: var(--black);
-    font-size: 15px;
-    margin-top: 40px;
-    margin-left: 70px;
-}
-
-
+ 
+ 
  .About{
         background-color: var(--white);
         padding: 7rem 0;
@@ -386,17 +369,21 @@ nav.open ul{
         grid-gap: 20px;
     }
     .About h2{
-        margin-top: 70px;
-        margin-left: 70px;
         color: var(--primary);
     }
     .About p{
         text-align: justify;
         color: var(--black);
         font-size: 15px;
-        margin-top: 40px;
-        margin-left: 70px;
+        
     }
+
+    @media (max-width: 998px) {
+        .services__wrapper{
+          
+            grid-template-columns: 1fr ;
+        }
+        }
 
     @media (max-width: 998px) {
         
@@ -442,11 +429,7 @@ nav.open ul{
         color: var(--white);
 
        }
-        .container{
-          
-            align-items: center;
-        }
-
+        
 
         .gridWrapper{
 
@@ -454,7 +437,6 @@ nav.open ul{
              
             margin-top: 4rem;
             gap: 3rem;
-           display: flex;
            display: grid;
            grid-template-columns: 1fr 1fr 1fr ;
         }
@@ -468,6 +450,12 @@ nav.open ul{
 
             background-color: var(--white);
             border-radius: 1rem;
+            max-width: 350px;
+        }
+
+        .gridCard img{
+
+            width: 100%;
         }
 
         .gridCard h3{
@@ -487,7 +475,16 @@ nav.open ul{
 
        
        @media (max-width: 998px) {
-         
+         .gridWrapper{
+            grid-template-columns: 1fr !important;
+         }
+         .gridCard{
+
+            margin: 0 auto;
+         }
+
+ 
+
        }
 
          
@@ -508,6 +505,7 @@ nav.open ul{
  .free {
     background-color: var(--primary);
     text-align: center;
+    padding: 1em 0 ;
 }
 
 .free h3 {
@@ -662,12 +660,7 @@ nav.open ul{
     color: var(--gray);
 
    }
-    .container{
-       
-        align-items: center;
-        position: relative;
-        padding: 1rem 0;
-    }
+     
 
 
     .gridWrapper{
@@ -924,12 +917,73 @@ nav.open ul{
     margin-left: 7rem;
 }
 
-.latest__container{
-padding: 6rem 0;
- text-decoration: none;
- 
+.latest_wrapper{
+
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
 
 }
+
+.left-s h1{
+margin-top: 5rem;
+color: var(--primary);
+
+}
+
+.left-s img{
+    margin-top: 5rem;
+    width: 48rem;
+
+
+}
+
+
+.left-s ul{
+
+    margin-top: 1rem;
+     display: flex;
+     gap: 7rem;
+
+ 
+
+} 
+
+
+.left-s ul li{
+    display: flex;
+    gap: 13rem;
+    text-decoration: none;
+    
+
+
+
+} 
+
+.left-s ul span{
+   
+     margin-left: 1rem;
+
+     width: 10rem;
+
+} 
+
+
+ .left-s h2{
+    
+    color: var(--primary);
+    margin-top: 2rem;
+ }
+
+
+ .left-s h5{
+
+    color: var(--primary);
+   
+ }
+
+ 
 
 .left-s h1{
 
@@ -975,10 +1029,108 @@ color: var(--primary);
 } 
 
 
- 
- 
+ .left-s h2{
 
- 
+    color: var(--primary);
+    margin-top: 2rem;
+ }
+
+
+ .left-s h5{
+
+    color: var(--primary);
+   
+ }
+
+ .left-s2 h1{
+
+    color: var(--primary);
+    margin-top: 6rem;
+    
+    }
+    
+    .left-s2 img{
+        margin-top: 5rem;
+        width: 48rem;
+    
+    
+    }
+    
+    
+    .left-s2 ul{
+    
+        margin-top: 1rem;
+         display: flex;
+         gap: 7rem;
+    
+     
+    
+    } 
+    
+    
+    .left-s2 ul li{
+        display: flex;
+        gap: 13rem;
+        text-decoration: none;
+        
+    
+    
+    
+    } 
+    
+    .left-s2 ul span{
+       
+         margin-left: 1rem;
+    
+         width: 10rem;
+    
+    } 
+    
+    
+     .left-s2 h2{
+    
+        color: var(--primary);
+        margin-top: 2rem;
+     }
+    
+    
+     .left-s2 h5{
+        color: var(--primary);
+       
+     }
+
+     .right-s ul{
+
+         
+     }
+    
+
+     .right-s h1{
+
+        color: var(--primary);
+        margin-top: 4rem;
+     }
+
+     .right-s ul li{
+
+        margin-top: 1rem;
+       gap: 1rem;
+     }
+
+     .right-s2{
+
+          
+        margin-top: 13rem;
+        gap: 5rem;
+
+
+
+     }
+
+
+    
+
+        
 
 
 
