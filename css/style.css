@@ -186,6 +186,25 @@ nav.open ul{
         color: var(--black);
     }
 
+    .toggle_menu.open span:nth-child(1){
+
+        transition: 0.5s ease;
+        transform: translate(-2px,7.3px) rotate(45deg);
+    }
+
+    .toggle_menu.open span:nth-child(2){
+
+        opacity: 0;
+        transition: 0;
+    }
+
+    .toggle_menu.open span:nth-child(3){
+
+        transition: 0.5s ease;
+        transform: translate(-2px,-12px) rotate(-45deg);
+    }
+
+
 
 }
 
@@ -911,6 +930,11 @@ color: var(--primary);
 
 
 
- 
+.categories_ul{
+
+    margin-left: 61rem;
+   }
+   
+   
    
  
