@@ -26,7 +26,7 @@
      
            </div>
      
-           <nav>
+           <nav class="nav">
              <ul>
                  
                  <li><a class="active" href="index.html">HOME</a></li>
@@ -42,9 +42,6 @@
                 <span></span>
                 <span></span>
                 <span></span>
-
-
-
                </div>
 
         </div>
@@ -337,5 +334,17 @@
 
     </section>
 
+
+    <script>
+      const nav= document.querySelector(".nav");
+      const toggleMenu = document.querySelector(".toggle_menu");
+      
+
+      toggleMenu.addEventListener("click",()=>{
+          toggleMenu.classlist.toggle("open");
+          nav.classlist.toggle("open");
+
+      });
+  </script>
 </body>
 </html>
