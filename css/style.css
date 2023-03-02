@@ -56,6 +56,7 @@ body{
 
     background-color: var(--black);
     padding: 3rem 0;
+    width: 100%;
     
 }
 
@@ -122,6 +123,12 @@ nav ul li a:hover {
 
 }
 
+nav.open ul{
+
+    right: -50%;
+    transition: 0.5s ease-in;
+}
+
 
 .toggle_menu {
     cursor: pointer;
@@ -129,49 +136,62 @@ nav ul li a:hover {
 }
 
 .toggle_menu span {
-    background-color: var(--white);
+    background-color: var(--primary);
     display: block;
     height: 0.2rem;
     width: 2rem;
     margin-bottom: 0.4rem;
+    border-radius: 0.5rem;
 
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .toggle_menu {
         display: block;
+        transition: 0.5s ease-in;
     }
-   nav ul{
-    display: block;
-    position: absolute;
-    background-color:var(--white);
-    right: -100%;
-    top: 6.5rem;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-   }
-
-    nav ul li a{
 
 
+    nav.open ul {
+        right:  0;
+        transition: 0.5s ease-in;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        right: -50%;
+        top: 6.5rem;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        transition: 0.5s ease-in;
+    }
+
+    nav ul li a {
         display: block;
         width: 100%;
         padding: 1rem;
+        color: var(--black);
+     
     }
 
-    nav ul li:hover{
+    nav ul li{
+        border-bottom:  1px solid rgb(67, 16, 232);
+    }
 
+    nav ul li:hover {
         background-color: var(--primary);
+
+    }
+
+    nav ul li:hover a {
+        color: var(--black);
     }
 
 
-
-
- }
-
-
-
+}
  /*--------------------------------------------
        Header     Css Ends Here */
 
