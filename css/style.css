@@ -57,8 +57,7 @@ body{
 
     background-color: var(--black);
     padding: 3rem 0;
-    position: fixed;
-    width: 100%;
+  
     
 }
 
@@ -234,19 +233,7 @@ nav.open ul{
 }
 
 
-@media (max-width: 998px) {
- .banner__wrapper{
 
-    flex-direction: column;
- }
-
- .banner img{
-
-      width: 100% !important ;
- }
-
-
-}
 
 .banner img{
 
@@ -283,6 +270,19 @@ nav.open ul{
 }
 
 
+@media (max-width: 998px) {
+    .banner__wrapper{
+   
+       flex-direction: column;
+    }
+   
+    .banner img{
+   
+         width: 100% !important ;
+    }
+   
+   
+   }
 
 
  /*--------------------------------------------
@@ -305,12 +305,7 @@ nav.open ul{
 
 }
 
-@media (max-width: 768px) {
-.services__wrapper{
-  
-    grid-template-columns: 1fr 1fr 1fr;
-}
-}
+
 
 .services__type{
 
@@ -347,6 +342,14 @@ nav.open ul{
 
     margin-bottom: 2rem;
 }
+
+
+@media (max-width: 768px) {
+    .services__wrapper{
+      
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    }
 
  /*--------------------------------------------*/
 
@@ -395,19 +398,27 @@ nav.open ul{
         margin-left: 70px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 998px) {
         
-        .About{
+         .About__gridWrapper{
+   
+            display: block;
+         }
 
-            flex-direction: column;
-        }
+         
+       
+        .About img{
+   
+            width: 100% !important ;
+       }
+      
 
     }
 
 
 
      /*--------------------------------------------
-       Header     Css Ends Here */
+       About     Css Ends Here */
 
 
 
@@ -475,12 +486,18 @@ nav.open ul{
        }
 
        
+       @media (max-width: 998px) {
+         
+       }
 
+         
+        
+       
 
      
 
        /*--------------------------------------------
-       Header     Css Ends Here */
+      Trends    Css Ends Here */
 
        
 
@@ -507,7 +524,7 @@ nav.open ul{
 }
 
        /*--------------------------------------------
-       Header     Css Ends Here */
+      Free     Css Ends Here */
 
 
  .footer{
@@ -958,16 +975,11 @@ color: var(--primary);
 } 
 
 
-.categories{
+ 
+ 
 
-  align-items: right;
+ 
 
-}
-.categories__container{
-
- margin-left: 61rem;
-  margin-top: 1rem;
-}
 
 
 
