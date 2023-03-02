@@ -57,6 +57,8 @@ body{
 
     background-color: var(--black);
     padding: 3rem 0;
+    position: fixed;
+    width: 100%;
     
 }
 
@@ -162,11 +164,12 @@ nav.open ul{
         display: block;
         position: absolute;
         right: -100%;
-        top: 6.5rem;
+        top: 8rem;
         height: 100vh;
         width: 100%;
         background-color: white;
         text-align: left;
+        z-index: 999;
         transition: 0.5s ease-in;
        
     }
@@ -219,6 +222,7 @@ nav.open ul{
  .banner{
 
     padding: 6rem 0;
+    padding-top: 12rem;
 
  }
 
@@ -227,6 +231,21 @@ nav.open ul{
 
     display: flex;
     align-items: center;
+}
+
+
+@media (max-width: 998px) {
+ .banner__wrapper{
+
+    flex-direction: column;
+ }
+
+ .banner img{
+
+      width: 100% !important ;
+ }
+
+
 }
 
 .banner img{
@@ -238,8 +257,9 @@ nav.open ul{
 .banner__content h1{
 
     color: var(--primary);
-    font-size: 5rem;
+    font-size: clamp(3rem,5vw,5rem);
     line-height: 1;
+    
 
 
 }
@@ -263,6 +283,8 @@ nav.open ul{
 }
 
 
+
+
  /*--------------------------------------------
        Header     Css Ends Here */
 
@@ -281,6 +303,13 @@ nav.open ul{
     grid-gap: 3rem;
 
 
+}
+
+@media (max-width: 768px) {
+.services__wrapper{
+  
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }
 
 .services__type{
@@ -364,6 +393,15 @@ nav.open ul{
         font-size: 15px;
         margin-top: 40px;
         margin-left: 70px;
+    }
+
+    @media (max-width: 768px) {
+        
+        .About{
+
+            flex-direction: column;
+        }
+
     }
 
 
@@ -876,13 +914,13 @@ padding: 6rem 0;
 
 }
 
-.latest__container h1{
+.left-s h1{
 
 color: var(--primary);
 
 }
 
-.latest__container img{
+.left-s img{
     margin-top: 5rem;
     width: 48rem;
 
@@ -890,7 +928,7 @@ color: var(--primary);
 }
 
 
-.latest__container ul{
+.left-s ul{
 
     margin-top: 1rem;
      display: flex;
@@ -901,7 +939,7 @@ color: var(--primary);
 } 
 
 
-.latest__container ul li{
+.left-s ul li{
     display: flex;
     gap: 13rem;
     text-decoration: none;
@@ -911,7 +949,7 @@ color: var(--primary);
 
 } 
 
-.latest__container ul span{
+.left-s ul span{
    
      margin-left: 1rem;
 
@@ -928,7 +966,11 @@ color: var(--primary);
 .categories__container{
 
  margin-left: 61rem;
+  margin-top: 1rem;
 }
+
+
+
 
 
 
