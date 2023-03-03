@@ -922,7 +922,7 @@ nav.open ul{
     text-decoration: none;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 4rem;
+    gap: 5rem;
 
 }
 
@@ -1099,31 +1099,56 @@ color: var(--primary);
        
      }
 
-     .right-s ul{
+      
 
-         
-     }
-    
 
-     .right-s h1{
-
-        color: var(--primary);
+    .right h1 {
+        margin-right: 4rem;
         margin-top: 4rem;
+        color: var(--primary);
+    }
+
+    .right h2{
+       margin-top: 8rem;
+        color: var(--primary);    
+    }
+
+  
+
+     .right-s ul {
+        
+        margin-top: 3rem;
+     
      }
 
-     .right-s ul li{
+   
 
-        margin-top: 1rem;
-       gap: 1rem;
+      
+
+     .right-s ul li {
+         display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        margin: 2rem 0;
+     
      }
 
-     .right-s2{
+     .post{
 
-          
-        margin-top: 13rem;
-        gap: 5rem;
+        display: flex   ;
+        gap: 1.5rem;
+        align-items: center;
+     }
 
+     .post h4{
 
+        margin-bottom: 1rem;
+     }
+     
+     .post img{
+
+        height: 10rem;
+        width: 10rem;
 
      }
 
