@@ -21,25 +21,31 @@
    
                    <img src="./img/logo.png" alt="">
         
-                   <h2>Creating  <span>Visual</span> Designs</h2>
+                   <h2>Creative  <span>Creative</span> Designs</h2>
         
               </div>
         
-              <nav>
+              <nav class="nav">
                 <ul>
-                    <li><a href="">HOME</a></li>
+                    
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a class="active" href="Services.html">SERVICES</a></li>
-                    <li><a href="#">UPDATES</a></li>
-                    <li><a href="#">CONTACTS</a></li>
+                    <li><a href="updates.html">UPDATES</a></li>
+                    <li><a href="">CONTACTS</a></li>
                 </ul>
               </nav>
         
+                  <div class="toggle_menu">
    
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                  </div>
    
            </div>
         </div>
-     </header> 
+     </header>
 
 
      <section class="webdev">
@@ -125,7 +131,7 @@
 
 
 
-
+       
 
 
 
@@ -275,7 +281,17 @@
 
 
 
+   <script>
+    const nav= document.querySelector(".nav");
+    const toggleMenu = document.querySelector(".toggle_menu");
+    
 
+    toggleMenu.addEventListener("click",() =>{
+        toggleMenu.classList.toggle("open");
+        nav.classList.toggle("open");
+
+    });
+</script>
 
 
 
