@@ -235,6 +235,7 @@ nav.open ul{
 
     display: flex;
     align-items: center;
+    gap: 4rem;
 }
 
 
@@ -475,7 +476,7 @@ nav.open ul{
 
         .gridCard{
 
-            background-color: var(--white);
+            background-color: #2b2b2b;
             border-radius: 1rem;
             max-width: 350px;
         }
